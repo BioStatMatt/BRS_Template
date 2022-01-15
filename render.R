@@ -6,7 +6,7 @@ args <- commandArgs(trailingOnly=TRUE)
 ## Run report and output document
 tryCatch(
   rmarkdown::render(
-    input = "template.Rmd", 
+    input = "report.Rmd", 
     output_file = args[1]),
   error=function(e) {
     print(e)
