@@ -2,4 +2,22 @@ rccola:
   args:
     url: https://redcap.vanderbilt.edu/api/
   keys:
-    redcap_data: <REDCap API key> 
+    redcap_data: <REDCap API key>
+brs:
+  failure:
+    directory: <directory>
+    cron:
+      min: 0 # midnight
+      dow: 1 # Monday
+    error:
+      to: <error address> 
+      subject: <error subject> 
+      template: <error content>
+    output:
+      email:
+        to: <success address> 
+        subject: <success subject> 
+        template: <success content> 
+    command: Rscript render.R
+    ext: html
+    log: INFO
