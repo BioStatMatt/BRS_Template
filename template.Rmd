@@ -1,5 +1,5 @@
 ---
-title: "RDS Template"
+title: "BRS Template"
 author: "Matt Shotwell"
 date: "Updated: `r date()`"
 output: html_document
