@@ -4,7 +4,7 @@ rccola:
   keys:
     redcap_data: <REDCap API key>
 brs:
-  failure:
+  report:
     directory: <directory>
     cron:
       min: 0 # midnight
